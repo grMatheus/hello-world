@@ -1,0 +1,181 @@
+<!-- Importando o Bootstrap 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+
+
+<!-- Inicio da folha de estilo CSS-->
+<style>
+
+body {
+  margin-top:20px;
+  background-color:#f2f6fc;
+  color:#69707a;
+}
+
+.banner {
+
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+}
+
+.img-account-profile {
+    height: 160px;
+}
+
+.card { 
+    box-shadow: 0 2.4px 28px 0 rgb(33 40 50 / 15%);
+}
+.card .card-header {
+    font-weight: 500;
+}
+.card-header:first-child {
+    border-radius: 5.6px 5.6px 0 0;
+}
+.card-header {
+    padding: 21.6px;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+</style> <!--Fim da folha de estilo CSS-->
+
+<!--Banner azul-->
+<div class="banner"></div>
+
+<!--Container que comporta os dois quadros: profile e resumo-->
+<div class="container-xl px-4 mt-4"> <!-- utilizando das classes disponíveis no Bootstrap 5.2-->
+  <div class="row">
+      <div class="col-xl-4">
+          <!-- Caixa do perfil-->
+          <div class="card mb-4 mb-xl-0">
+              <div class="card-header">Informações</div>
+              <div class="card-body text-center">
+                  <!-- Imagem do perfil-->
+                  <img class="img-account-profile rounded-circle mb-2" src="/assets/perfil.png">                 
+              </div>
+
+              <div class="card mb-1">
+              Nome: Matheus Guerreiro
+              </div>
+              <div class="card mb-1">
+              Nascimento: 05/02/1997
+              </div>
+              <div class="card mb-1">
+              Local: Limeira - SP
+              </div>
+              <div class="card mb-1">
+              Curso: Análise e Desenvolvimento de sistemas
+              </div>
+              <div class="card mb-1">
+              Instituição: UNINTER
+              </div>
+
+          </div>
+      </div>
+
+      <div class="col-xl-8">
+          <!-- Quadro Resumo-->
+          <div class="card mb-4">
+              <div class="card-header">Resumo</div>
+              <div class="card-body">
+                <!--Utilizando da barra de navegação em forma de abas, ou "tabs", disponível no Bootstrap 5.2. Encontrei esse modelo de navegação na documentação do Boobtstrap-->
+                <nav class="nav nav-tabs">
+                  <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-sobre">Sobre</button>
+                  <button type="button" class="nav-link" data-bs-toggle="tab"  data-bs-target="#tab-edu">Educacional</button>
+                  <button type="button" class="nav-link" data-bs-toggle="tab"  data-bs-target="#tab-port">Portifólio</button>
+                  <button type="button" class="nav-link" data-bs-toggle="tab"  data-bs-target="#tab-contato">Contato</button>
+
+                </nav>
+                <!--Conteudo apresentado em cada tab-->
+                <div class="tab-content">
+                  <div class="tab-pane active show fade" id="tab-sobre">
+                    <div class="container">
+                      <p> 
+                        <br>
+                        Olá! meu nome é Matheus Guerreiro, tenho 25 anos e atualmente curso Análise e Desenvolvimento de Sistemas pela Uninter. Creio que estudar tecnologia e trabalhar com ela pode ser muito empolgante quando conseguimos aplicar o conhecimento e a técnica na solução de problemas para as pessoas, e é isso que me motiva a desenvolver minhas habilidades na área. Já tive contato com desenvolvimento de sistemas anteriormente, quando me formei Técnico em informática, em 2014. No entanto, não segui profissionalmente em desenvolvimento de sistemas, apesar de trabalhar com tecnologia há quase 10 anos, na área de Suporte de TI.
+                        Além da tecnologia, tive um breve percurso nas humanidades, quase me formando em Sociologia e Letras (Lingua Portuguesa e Inglesa). No entanto, decidi por não dar segmento profissional nessas áreas e focar na carreira de TI. Mas as humanidades ainda me são muito caras e, portanto, não deixo de acompanhar assuntos e discussões como um hobbie. Por falar em hobbie, gosto muito de música, literatura, cinema, arte e cultura em geral. Creio que a interdiciplinaridade de interesses me é muito benéfica, pois me permite ter uma visão ampla do mundo. Como escreveu Pessoa na voz e lírica de Álvaro de Campos:
+                        <br>
+                        <br>
+                        <br>
+
+                        <i>
+                          "Sou um técnico, mas tenho técnica só dentro da técnica.<br>
+                          Fora disso sou doido, com todo o direito a sê-lo."
+                          <p>Fernando Pessoa, 1923.</p>
+                        </i>
+        
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="tab-edu">
+                    <br>
+                    <h4>Formação Acadêmica</h4>                    
+                    <ul>
+                      <li>Técnico em Informatica - Colégio Técnico de Limeira COTIL UNICAMP (2012-2014)</li>
+                      <li>Licenciatura em Ciências Sociais - Universidade Estadual de São Paulo UNICAMP (2016-2019)</li>
+                      <li>Licenciatura em Letras - Universidade Estadual de São Paulo UNICAMP (2019-2021)</li>
+                      <li>Gestão da Tecnologia da Informação - UNINTER (2018-2022) </li>
+                      <li>Análise e desenvolvimento de sistemas - UNINTER (2022-2023) </li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-pane fade" id="tab-port">
+                    Lorem ipsum 3
+                  </div>
+
+                  <div class="tab-pane fade" id="tab-contato">
+                    <br>
+                    <h4>Contato</h4>
+                    <form> <!--Formulário de contato utilizando inputs-->
+                      Nome: <br> <input type="text"> <br>
+                      Email: <br> <input type="email"> <br>
+                      Telefone: <br> <input type="number"> <br>
+                      Mensagem: <br> <textarea></textarea> <br>
+                      <input type="submit" value="Enviar"> <br>
+                    </form>
+
+                  </div>
+                </div>
+              
+              
+          
+              
+              </div>
+          
+
+          </div>
+         
+
+      </div>
+
+  </div>
+</div>
+
+<router-outlet></router-outlet>
